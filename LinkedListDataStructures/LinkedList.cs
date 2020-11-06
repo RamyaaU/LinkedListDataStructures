@@ -55,6 +55,12 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 4
+        /// <summary>
+        /// Inserts the specified position.
+        /// </summary>
+        /// <param name="position">The position.</param>
+        /// <param name="item">The item.</param>
         internal void Insert(int position, int item)
         {
             Node node = new Node(item);
