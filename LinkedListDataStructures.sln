@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListDataStructures", "LinkedListDataStructures\LinkedListDataStructures.csproj", "{0A5D0865-60BE-4E03-9BE0-0EFFD3A40315}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A5D0865-60BE-4E03-9BE0-0EFFD3A40315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5D0865-60BE-4E03-9BE0-0EFFD3A40315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5D0865-60BE-4E03-9BE0-0EFFD3A40315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5D0865-60BE-4E03-9BE0-0EFFD3A40315}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82CB6610-DAC7-4CF5-BEA9-5FCBF5842561}
+	EndGlobalSection
+EndGlobal
