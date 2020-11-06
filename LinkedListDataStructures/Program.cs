@@ -4,7 +4,11 @@ namespace LinkedListDataStructures
 {
     public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
+/        static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to Linked List!");
             //creating a list
@@ -17,6 +21,7 @@ namespace LinkedListDataStructures
             //inserting item to list
             list.Insert(4, 12);
             Console.WriteLine(list.Search(10));
+            ////linkedlist sequence = 56->30->40->70
             list.Display();
         }
     }
