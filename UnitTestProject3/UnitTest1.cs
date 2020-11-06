@@ -6,7 +6,7 @@ namespace UnitTestProject3
     [TestClass]
     public class UnitTest1
     {
-        ///TC 9.1s
+        ///TC 9.1
         /// <summary>
         /// Givens the element to delete should give new size after deletion true case
         /// </summary>
