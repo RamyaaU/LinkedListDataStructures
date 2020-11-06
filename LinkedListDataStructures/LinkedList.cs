@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace LinkedListDataStructures
-{
-    class LinkedList
+{ 
+    public class LinkedList
     {
-        internal Node head;
+
+        public Node head;
         /// <summary>
         /// Initializes a new instance of the <see cref="LinkedList"/> class.
         /// </summary>
@@ -15,12 +16,11 @@ namespace LinkedListDataStructures
             this.head = null;
         }
 
-        /// UC 2
         /// <summary>
         /// Adds the specified item.
         /// </summary>
         /// <param name="item">The item.</param>
-        internal void Add(int item)
+        public void Add(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -34,12 +34,11 @@ namespace LinkedListDataStructures
             }
         }
 
-        /// UC 3
         /// <summary>
         /// Appends the specified item.
         /// </summary>
         /// <param name="item">The item.</param>
-        internal void Append(int item)
+        public void Append(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -55,13 +54,12 @@ namespace LinkedListDataStructures
             }
         }
 
-        /// UC 4
         /// <summary>
-        /// Inserts the element at specified position.
+        /// Inserts the specified position.
         /// </summary>
         /// <param name="position">The position.</param>
         /// <param name="item">The item.</param>
-        internal void Insert(int position, int item)
+        public void Insert(int position, int item)
         {
             Node node = new Node(item);
             if (position < 1)
@@ -86,18 +84,16 @@ namespace LinkedListDataStructures
                 }
                 catch (NullReferenceException)
                 {
-                    System.Console.WriteLine("Position out of range");
+                    System.Console.WriteLine("Index out of bounds");
                 }
             }
         }
 
-
-        /// UC 5
         /// <summary>
-        /// Pops this element at instance.
+        /// Pops this instance.
         /// </summary>
         /// <returns></returns>
-        internal Node Pop()
+        public Node Pop()
         {
             if (head == null)
             {
@@ -112,12 +108,12 @@ namespace LinkedListDataStructures
             }
         }
 
-        /// UC 6
         /// <summary>
-        /// Pops the last node.
+        /// Removes the last node.
         /// </summary>
         /// <returns></returns>
-        internal Node PopLastNode()
+        public Node PopLastNode()
+
         {
             if (head == null)
             {
@@ -131,19 +127,17 @@ namespace LinkedListDataStructures
                 {
                     temp = temp.next;
                 }
-                Node PopLastNode = temp.next;
+                Node removedNode = temp.next;
                 temp.next = null;
-                return PopLastNode;
+                return removedNode;
             }
         }
 
-        /// UC 7
         /// <summary>
         /// Searches the specified item.
         /// </summary>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-
         public bool Search(int item)
         {
             if (head == null)
@@ -164,13 +158,10 @@ namespace LinkedListDataStructures
         /// <summary>
         /// Displays this instance.
         /// </summary>
-        internal void Display()
+        public void Display()
         {
             if (head == null)
-            {
-                Console.WriteLine("List is Empty");
-                return;
-            }
+                System.Console.WriteLine("List is Empty");
             else
             {
                 Node temp = head;
