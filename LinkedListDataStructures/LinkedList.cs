@@ -8,6 +8,7 @@ namespace LinkedListDataStructures
     {
 
         public Node head;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="LinkedList"/> class.
         /// </summary>
@@ -16,6 +17,7 @@ namespace LinkedListDataStructures
             this.head = null;
         }
 
+        /// UC 2
         /// <summary>
         /// Adds the specified item.
         /// </summary>
@@ -34,6 +36,7 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 3
         /// <summary>
         /// Appends the specified item.
         /// </summary>
@@ -54,6 +57,7 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 4
         /// <summary>
         /// Inserts the specified position.
         /// </summary>
@@ -89,6 +93,7 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 5
         /// <summary>
         /// Pops this instance.
         /// </summary>
@@ -108,6 +113,7 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 6
         /// <summary>
         /// Removes the last node.
         /// </summary>
@@ -127,12 +133,13 @@ namespace LinkedListDataStructures
                 {
                     temp = temp.next;
                 }
-                Node removedNode = temp.next;
+                Node poppedNode = temp.next;
                 temp.next = null;
-                return removedNode;
+                return poppedNode;
             }
         }
 
+        /// UC 7
         /// <summary>
         /// Searches the specified item.
         /// </summary>
@@ -155,6 +162,7 @@ namespace LinkedListDataStructures
             }
         }
 
+        /// UC 8
         /// <summary>
         /// Displays this instance.
         /// </summary>
